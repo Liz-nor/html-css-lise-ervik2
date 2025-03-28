@@ -1,0 +1,167 @@
+@media (min-width: 700px) {
+    nav {
+        display: block;
+        width: 100%;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .explore-btn {
+        justify-content: center;
+    }
+    
+
+    .sales-container img {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 30vh;
+    }
+
+    .front-page-text {
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+
+    .first-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 50px auto;
+        max-width: 1000px;
+    }
+    
+    .first-row img {
+        height: 200px;
+        width: auto;
+        border: 1px solid black;
+       
+    }
+
+    .second-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 50px auto;
+        max-width: 1000px;
+    }
+    
+    .second-row img {
+        height: 200px;
+        width: auto;
+        border: 1px solid black;
+        
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 150px;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    .logo {
+        max-width: 400px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .your-cart {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cart-container {
+        max-width: 700px;
+    }
+
+    .do-not-miss-box, 
+    .do-not-miss-box img {
+        display: grid;
+        height: 75px;
+        gap: 15px;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: #D9D9D9;
+        max-width: 5rem;
+    }
+
+   .product-detail img {
+        max-width: 700px;
+        padding-top: 15px;
+        margin: 50px auto;
+    }
+    
+    .cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .cart-product {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .cart-product img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .product.info {
+        text-align: left;
+    }
+    
+    .quantity {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .quantity-btn {
+        background: black;
+        color: #ffffff;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    .apply-btn,
+    .checkout-btn {
+        background: var(--foundation-color);
+        color: #ffffff;
+        padding: 8px;
+        width: 100%;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .checkout-items {
+        background-color: #D9D9D9;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    .checkout-info {
+        font-weight: 500;
+    }
+
+    .checkout-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .newsletter-logo {
+        width: 75px;
+        float: right;
+    }
+}

@@ -1,0 +1,106 @@
+.product-background-image {
+    background-image: url("../images/2.jpg");
+    display: block;
+    height: 300px;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    margin-inline: auto;
+    background-repeat: no-repeat;
+}
+
+.product-background-text {
+    background-color: black;
+    color: #fff;
+    width: 225px;
+}
+
+.text-container {
+    position: relative;
+    text-align: center;
+}
+
+.top-left {
+    position: absolute;
+    top: 18px;
+    left: 150px;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.explore-img {
+    background-image: url(../images/6.1.jpg);
+    display: block;
+    height: 300px;
+    width: 80%;
+    background-size: cover;
+    background-position: center 25%;
+    margin-inline: auto;
+    background-repeat: no-repeat;
+}
+
+.explore-img-text {
+    background-color: black;
+    color: #fff;
+    width: 225px;
+}
+
+.do-not-miss-box img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black;
+    height: 75px;
+    width: auto;
+}
+
+.footer {
+    color: white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: var(--foundation-color);
+    padding-left: 20px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: var(--foundation-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
