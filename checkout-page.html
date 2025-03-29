@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View your cart items">
-    <title>RainyDays Cart</title>
+    <meta name="description" content="Proceed to checkout your items">
+    <title>RainyDays Checkout</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-io/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/product.css">
@@ -32,55 +35,62 @@
         <a href="cart.html">Cart</a>
     </nav>
   </header>
-  <a href="index.html"><img src="images/RainyDays_Logo.png" alt="RainyDays logo" class="cart-logo"></a>
-  <div class="back-arrow">
-    <a href="product.html">
-      <label for="back-arrow" class="arrow"><i class="fa-solid fa-circle-arrow-left"></i>Back</a></label>
-      <input type="checkbox" id="back-arrow"/>
-  </div>
+  <a href="index.html"><img src="images/RainyDays_Logo.png" alt="RainyDays logo" class="logo"></a>
+  <a href="cart.html">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+  </a>
   <h1>Checkout</h1>
   <div class="checkout-container">
     <div class="checkout">
         <h2>Enter your information</h2>
         <div class="enter-info">
             <form>
-                <p>Name</p>
+                <p><label for="name">Name</label></p>
                 <input type="name" placeholder="Enter full name">
-                <p>E-mail</p>
+                <p><label for="email">E-mail</label></p>
                 <input type="email" placeholder="Enter e-mail">
-                <p>Phone number</p>
+                <p><label for="phonenumber">Phone number</label></p>
                 <input type="text" placeholder="Enter phonenumber">
             </form>
         </div>
-        <div class="log-in"></div>
-        <form>
-            <p>or log in</p>
-            <input type="text" placeholder="Enter e-mail">
-            <input type="text" placeholder="Enter password">
-            <button type="submit" class="log-in-btn">Log in</button>
-        </form>
+        <div class="log-in">
+          <form>
+              <p><label for="login">Or log in</label></p>
+              <label for="login-email">E-mail</label>
+              <input type="text" label="Enter e-mail" placeholder="Enter e-mail">
+              <label for="login-password">Password</label>
+              <input type="text" placeholder="Enter password">
+              <button type="submit" class="log-in-btn">Log in</button>
+          </form>
+      </div>
     </div>
     <div class="payment">
         <h2>Enter your payment details</h2>
         <div class="payment-details">
-        <form>
-            <p>Cardholders name</p>
+        <form action="confirmation-page.html" method="post">
+            <p><label for="cardholder-nam">Cardholders name</p></label>
             <input type="text" placeholder="Enter full name">
-            <p>Card number</p>
+            <p><label for="card-number">Card number</p></label>
             <input type="text" placeholder="Enter card number">
-            <p>CVV</p>
+            <p><label for="cvv-code">CVV</p></label>
             <input type="text" placeholder="Example:1234">
-            <p>Expiration date</p>
+            <p><label for="expiration-date">Expiration date</p></label>
             <input type="text" placeholder="MM/YY">
+          </form>
+          <div class="checkout-btns">
+          <a href="cart.html">
             <button type="submit" class="cancel-btn">Cancel</button>
-            <a href="/RainyDays/Rainydays-html-assignement/confirmation-page.html"><button type="submit" class="log-in-btn">Complete</button></a>
-        </form>
+          </a>
+          <a href="confirmation-page.html">
+            <button type="submit" class="complete-btn">Complete</button>
+          </a>
+        </div>
         </div>
     </div>
-  <div class="checkout-items">
-    <h3>Your Cart</h3>
-    <div class="checkout-img">
-      <div class="cart-product">
+    <div class="checkout-items">
+    <h2>Your Cart</h2>
+      <div class="checkout-img">
+        <div class="cart-product">
         <img src="images/RainyDays_Jacket3.jpg" alt="Red light-weight runningjacket" class="cart-photo">
         <div class="checkout-info">
           <h3>Urban Stealth Jacket</h3>
@@ -90,7 +100,6 @@
       </div>
     </div>
   </div>
-</div>
 <div class="reviews">
     <i class="fa-solid fa-star"></i>
     <i class="fa-solid fa-star"></i>

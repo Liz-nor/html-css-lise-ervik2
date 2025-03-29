@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 700px) {    
     nav {
         display: block;
         width: 100%;
@@ -8,12 +8,16 @@
         display: none;
     }
 
-    .arrow {
+    .fa-circle-arrow-left {
         display: none;
     }
 
     nav a {
         display: inline-block;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
     }
 
     .explore-btn {
@@ -74,52 +78,41 @@
         padding: 0px 50px 0px 50px;
     }
 
-    .your-cart {
+    .your-product-detail {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .cart-container {
-        max-width: 700px;
-    }
-
-    .do-not-miss-box, 
-    .do-not-miss-box img {
-        display: grid;
-        height: 75px;
-        gap: 15px;
-        grid-template-rows: repeat(4, 1fr);
-        background-color: #D9D9D9;
-        max-width: 5rem;
+    .product-detail-container {
+        max-width: 1000px;
     }
 
    .product-detail img {
         max-width: 700px;
         padding-top: 15px;
-        margin: 50px auto;
     }
     
-    .cart {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .product-detail {
+        max-width: 1000px;
         padding: 20px;
     }
     
-    .cart-product {
+    .product-detail-product {
+        width: 700px;
         display: flex;
         align-items: center;
-        gap: 15px;
     }
     
-    .cart-product img {
-        width: 100px;
-        height: auto;
+    .product-detail-product img {
         border-radius: 10px;
     }
-    
-    .product.info {
-        text-align: left;
+
+    .product-info p {
+        font-size: medium;
+    }
+
+    .cart-product img {
+        width: 100px;
     }
     
     .quantity {
@@ -140,7 +133,7 @@
         background: var(--foundation-color);
         color: #ffffff;
         padding: 8px;
-        width: 100%;
+        width: 100px;
         cursor: pointer;
         margin-top: 5px;
     }
@@ -156,8 +149,29 @@
     }
 
     .checkout-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .log-in {
+        display: block;
+        padding: 2px;
+    }
+
+    .log-in p {
+        padding-bottom: 4px;
+    }
+
+    .reviews{
+        background: var(--foundation-color);
+        margin: 10px auto;
+        padding-bottom: 5px;
+        color: #ffffff;
+    }
+
+    .reviews p {
+        margin: 2px;
     }
 
     .newsletter-logo {
