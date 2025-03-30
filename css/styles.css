@@ -36,8 +36,8 @@ nav {
     display: block;
 }
 
-.intro-image {
-    max-width: fit-content;
+.front-page img {
+    max-width: 100%;
     margin-inline: auto;
     display: block;
     min-width: 100px;
@@ -53,14 +53,14 @@ nav {
 
 nav, 
 #menu-checkbox {
-    background-color: #125E71;
+    background-color: var(--foundation-color);
     font-size: 1.5rem;
     display: none;
 }
 
 nav a { 
     color: #ffffff;
-    background-color: #125E71;
+    background-color: var(--foundation-color);
     display: block;
     padding: 5px;
     font-size: 1rem;
@@ -71,6 +71,11 @@ nav a {
     display: block;
     margin-left: 10px;
     order: 1;
+}
+
+.fa-bars {
+    color: #ffffff;
+    padding: 10px 0px 0px 10px;
 }
 
 h1 {
@@ -123,12 +128,12 @@ h1 {
 .newsletter {
     display: grid;
     background-color: var(--foundation-color);
-    color: #ffffff;
+    color: var(--font-color);
     padding: 15px;
     border-radius: 10px;
     border: 1px solid black;
     width: fit-content;
-    margin: 50px auto;
+    margin: var(--auto-center);
 }
 .newsletter button {
     cursor: pointer;
@@ -162,7 +167,7 @@ h1 {
 
 .first-row img {
     height: 125px;
-    width: 100px;
+    width: var(--width);
     border: 1px solid black;
 }
 
@@ -177,7 +182,7 @@ h1 {
 
 .second-row img {
     height: 125px;
-    width: 100px;
+    width: var(--width);
     border: 1px solid black;
 }
 
@@ -195,7 +200,7 @@ h1 {
 .sales-container {
     position: relative;
     text-align: center;
-    color: #ffffff;
+    color: var(--font-color);
     margin: 2vw;
 }
 
@@ -229,27 +234,30 @@ h1 {
 }
 
 
-.product-detail-container {
-    background: #d3d3d3;
-    margin: 50px auto;
+.product-detail-container,
+.cart-container {
+    background: var(--background-color);
+    margin: var(--auto-center);
     border-radius: 10px;
+    max-width: 1000px;
 }
 
-.product-detail {
-    /* display: flex;
-    flex-direction: column; */
+.product-detail,
+.cart {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    align-items: center;
 }
 
-.product-detail-product {
+.product-detail-product,
+.cart-product {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.product-detail-product img {
-    width: 100px;
+.product-detail-product img { 
+    width: var(--width);
     height: auto;
     border-radius: 8px;
 }
@@ -273,9 +281,27 @@ h1 {
     font-weight: 400;
 }
 
+.cart-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.cart-product img {
+    width: var(--width);
+}
+
+.cart-image img {
+    margin: var(--auto-center);
+    width: 400px;
+}
+
 .summary {
     padding: 15px;
-    max-width: fit-content;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .summary a {
@@ -288,27 +314,9 @@ h1 {
 }
 
 .summary input {
-    max-width: fit-content;
-    padding: 5px;
+    max-width: 140px;
+    padding: 5px 0px;
     margin:0;
-}
-
-.cart-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-.cart {
-    background: #d3d3d3;
-    width: 700px;
-    max-width: 100%;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.cart img {
-    width: 100px;
 }
 
 .quantity {
@@ -319,7 +327,7 @@ h1 {
 
 .quantity-btn {
     background: black;
-    color: #ffffff;
+    color: var(--font-color);
     padding: 5px 10px;
     cursor: pointer;
     border: none;
@@ -330,33 +338,42 @@ h1 {
     display: flex;
     justify-content: center;
     background: var(--foundation-color);
-    color: #ffffff;
+    color: var(--font-color);
     padding: 8px;
-    width: 100px;
+    width: 144px;
     cursor: pointer;
-    margin-top: 5px;
     border: none;
     text-decoration: none;
+    margin: 5px 5px 15px 0px;
 }
 
 
 .temporary-page-background {
     background-image: url(../images/7.jpg);
-    color: #ffffff;
-    max-width: 1000px;
     background-position: center;
-    padding: 2em 2em;
+    background-repeat: no-repeat;
+    color: var(--font-color);
+    min-block-size: 80vh;
+}
+
+.temporary-page-background p {
+    margin: 10px;
 }
 
 .checkout,
 .payment,
 .checkout-items {
-    background-color: #d3d3d3;
+    background-color: var(--background-color);
     width: inherit;
-    max-width: 1000px;
+    max-width: var(--width)
     padding: 10px;
     margin: 5px 5px 15px 5px;
     border-radius: 8px;
+}
+
+.checkout-items {
+    display: grid;
+    padding: 10px;
 }
 
 .checkout h2,
@@ -370,11 +387,14 @@ h1 {
     margin-bottom: 0;
 }
 
-.log-in {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin-bottom: 10px;
+.log-in-btn {
+    background-color: var(--foundation-color);
+    color: #ffffff;
+    border: none;
+    width: 100px;
+    padding: 8px;
+    margin: 5px 0px;
+    cursor: pointer;
 }
 
 .complete-btn {
@@ -382,9 +402,17 @@ h1 {
     color: #ffffff;
 }
 
-.payment-details {
+.enter-info {
     display: flex;
-    flex-wrap: nowrap;
+}
+
+.payment-details,
+.enter-info,
+.log-in {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 15px;
 }
 
 .cancel-btn,
@@ -393,7 +421,7 @@ h1 {
     flex-direction: column;
     width: 100px;
     padding: 8px;
-    margin: 20px 8px;
+    margin: 5px 0px;
     cursor: pointer;
     border: 1px solid black;
 }
@@ -413,45 +441,51 @@ h1 {
 }
 
 .reviews {
+    background-color: var(--foundation-color);
+    color: #ffffff;
     border-radius: 10px;
-    padding: 20px;
-
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .confirmation-page {
-    height: 100%;
+    background-image: url(/images/8.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    min-block-size: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 50px auto;
+    text-align: center;
 }
+
 .confirmation-page p {
     padding-left: 10px;
+    font-size: large;
 }
 
 .fa-check {
     position: center;
-    font-size: 5em;
+    font-size: 7em;
     color: rgb(0, 156, 0);
-    margin: 50px auto;
+    margin: var(--auto-center);
 }
 
 .social-icons a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--font-color);
 }
 
 .do-not-miss-box {
-    width: 400px;
+    width: 350px;
     border-radius: 8px;
     background: #d3d3d3;
     padding: 15px;
-    margin: 50px auto;
+    margin: var(--auto-center);
 }
 
 .box-jackets {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
 
 .box-jackets p {

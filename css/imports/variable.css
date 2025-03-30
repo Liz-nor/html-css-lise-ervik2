@@ -1,4 +1,8 @@
 :root {
     --foundation-color: #125E71;
     --background-color: #d3d3d3;
+    --font-color: #fff;
+    --width: 100px;
+    --max-width: 1000px;
+    --auto-center: 50px auto;
 }

@@ -12,7 +12,10 @@
 .product-background-text {
     background-color: black;
     color: #fff;
-    width: 225px;
+    width: 240px;
+}
+.product-background-text h1 {
+    padding: 0;
 }
 
 .text-container {
@@ -50,13 +53,10 @@
     grid-template-columns: repeat(2, 1fr);
     border: 1px solid black;
     height: 75px;
-    width: auto;
 }
 
 .footer {
     color: white;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
