@@ -330,7 +330,7 @@ h1 {
 .checkout-items {
     background-color: var(--background-color);
     width: inherit;
-    max-width: var(--width);
+    max-width: var(--max-width);
     padding: 10px;
     margin: 5px 5px 15px 5px;
     border-radius: 8px;
