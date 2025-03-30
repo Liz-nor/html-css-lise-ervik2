@@ -384,7 +384,7 @@ h1 {
 }
 .confirmation-page {
     background-image: url(../images/8.1.jpg);
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     min-block-size: 80vh;
     display: flex;
@@ -421,7 +421,6 @@ h1 {
     align-items: start;
     background-color: var(--foundation-color);
     padding-left: 20px;
-    
 }
 
 .footer-links {
@@ -443,7 +442,7 @@ h1 {
 }
 
 .footer-section ul li a {
-    color: #ffffff;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 14px;
 }
