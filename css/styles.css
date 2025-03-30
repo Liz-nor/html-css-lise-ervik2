@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Oswald", sans-serif;
-    src: url(/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(Oswald-VariableFont_wght.ttf);
 }
 
 body {
@@ -114,7 +114,6 @@ h1 {
 }
 
 .newsletter-container {
-    display: flex;
     justify-content: center;
     position: relative;
     margin-top: 10px;
@@ -122,12 +121,13 @@ h1 {
     z-index: 1000;
 }
 .newsletter {
+    display: grid;
     background-color: var(--foundation-color);
     color: #ffffff;
     padding: 15px;
     border-radius: 10px;
     border: 1px solid black;
-    width: inherit;
+    width: fit-content;
     margin: 50px auto;
 }
 .newsletter button {
@@ -141,8 +141,9 @@ h1 {
 }
 
 .newsletter-logo {
+    position: absolute;
     width: 75px;
-    float: right;
+    right: 20vw;
 }
 
 .copyright {
@@ -235,8 +236,8 @@ h1 {
 }
 
 .product-detail {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
     align-items: center;
 }
@@ -272,33 +273,6 @@ h1 {
     font-weight: 400;
 }
 
-.product-info p {
-    font-size: small;
-}
-
-.cart {
-    background: #d3d3d3;
-    width: 700px;
-}
-
-.cart img {
-    width: 100px;
-}
-
-.quantity {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.quantity-btn {
-    background: black;
-    color: #ffffff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-}
-
 .summary {
     padding: 15px;
     max-width: fit-content;
@@ -317,6 +291,38 @@ h1 {
     max-width: fit-content;
     padding: 5px;
     margin:0;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.cart {
+    background: #d3d3d3;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.cart img {
+    width: 100px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-btn {
+    background: black;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
 }
 
 .apply-btn,
@@ -412,19 +418,12 @@ h1 {
 
 }
 .confirmation-page {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 50px auto;
 }
-.confirmation-page img {
-    position: absolute;
-    width: 100%;
-    max-width: 1000px;
-    opacity: 40%;
-    margin: 50px auto;
-}
-
 .confirmation-page p {
     padding-left: 10px;
 }
