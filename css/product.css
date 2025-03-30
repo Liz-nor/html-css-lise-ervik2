@@ -11,7 +11,7 @@
 
 .product-background-text {
     background-color: black;
-    color: #fff;
+    color: var(--font-color);
     width: 240px;
 }
 .product-background-text h1 {
@@ -21,14 +21,6 @@
 .text-container {
     position: relative;
     text-align: center;
-}
-
-.top-left {
-    position: absolute;
-    top: 18px;
-    left: 150px;
-    font-size: 1.3rem;
-    color: black;
 }
 
 .explore-img {
@@ -55,53 +47,20 @@
     height: 75px;
 }
 
-.footer {
-    color: white;
-    width: 100%;
+.do-not-miss-box {
+    width: 350px;
+    border-radius: 8px;
+    background: #d3d3d3;
+    padding: 15px;
+    margin: var(--auto-center);
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    background-color: var(--foundation-color);
-    padding-left: 20px;
-    
+.box-jackets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-.footer-links {
-    display: flex;
-    gap: 50px;
+.box-jackets p {
+    font-size: small;
 }
-
-.footer-section p {
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 5px;
-}
-
-.footer-section ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    background-color: var(--foundation-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-}
-

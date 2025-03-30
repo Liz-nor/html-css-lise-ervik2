@@ -44,13 +44,6 @@ nav {
     padding-top: 30px;
 }
 
-
-.product-detail-logo {
-    max-width: 400px;
-    margin-inline: auto;
-    display: block;
-}
-
 nav, 
 #menu-checkbox {
     background-color: var(--foundation-color);
@@ -135,6 +128,7 @@ h1 {
     width: fit-content;
     margin: var(--auto-center);
 }
+
 .newsletter button {
     cursor: pointer;
     width: 150px;
@@ -143,12 +137,6 @@ h1 {
 #newsletter-mail {
     height: 20px;
     display: inline-block;
-}
-
-.newsletter-logo {
-    position: absolute;
-    width: 75px;
-    right: 20vw;
 }
 
 .copyright {
@@ -325,29 +313,6 @@ h1 {
     gap: 5px;
 }
 
-.quantity-btn {
-    background: black;
-    color: var(--font-color);
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-}
-
-.apply-btn,
-.checkout-btn {
-    display: flex;
-    justify-content: center;
-    background: var(--foundation-color);
-    color: var(--font-color);
-    padding: 8px;
-    width: 144px;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-    margin: 5px 5px 15px 0px;
-}
-
-
 .temporary-page-background {
     background-image: url(../images/7.jpg);
     background-position: center;
@@ -387,21 +352,6 @@ h1 {
     margin-bottom: 0;
 }
 
-.log-in-btn {
-    background-color: var(--foundation-color);
-    color: #ffffff;
-    border: none;
-    width: 100px;
-    padding: 8px;
-    margin: 5px 0px;
-    cursor: pointer;
-}
-
-.complete-btn {
-    background-color: var(--foundation-color);
-    color: #ffffff;
-}
-
 .enter-info {
     display: flex;
 }
@@ -413,21 +363,6 @@ h1 {
     flex-direction: column;
     width: 150px;
     margin: 15px;
-}
-
-.cancel-btn,
-.complete-btn {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    padding: 8px;
-    margin: 5px 0px;
-    cursor: pointer;
-    border: 1px solid black;
-}
-
-.checkout-btns a {
-    text-decoration: none;
 }
 
 .checkout-container h2 {
@@ -448,7 +383,7 @@ h1 {
     margin-bottom: 10px;
 }
 .confirmation-page {
-    background-image: url(/images/8.jpg);
+    background-image: url(/images/8.1.jpg);
     background-position: right;
     background-repeat: no-repeat;
     min-block-size: 80vh;
@@ -474,20 +409,53 @@ h1 {
     color: var(--font-color);
 }
 
-.do-not-miss-box {
-    width: 350px;
-    border-radius: 8px;
-    background: #d3d3d3;
-    padding: 15px;
-    margin: var(--auto-center);
+
+.footer {
+    color: white;
+    width: 100%;
 }
 
-.box-jackets {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: var(--foundation-color);
+    padding-left: 20px;
+    
 }
 
-.box-jackets p {
-    font-size: small;
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: var(--foundation-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
 }

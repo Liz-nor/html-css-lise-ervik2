@@ -22,3 +22,54 @@
     width: 100px;
     cursor: pointer;
 }
+.cancel-btn,
+.complete-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding: 8px;
+    margin: 5px 0px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.checkout-btns a {
+    text-decoration: none;
+}
+
+.log-in-btn {
+    background-color: var(--foundation-color);
+    color: #ffffff;
+    border: none;
+    width: 100px;
+    padding: 8px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: var(--foundation-color);
+    color: #ffffff;
+}
+
+.quantity-btn {
+    background: black;
+    color: var(--font-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.apply-btn,
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+    background: var(--foundation-color);
+    color: var(--font-color);
+    padding: 8px;
+    width: 144px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    margin: 5px 5px 15px 0px;
+}
