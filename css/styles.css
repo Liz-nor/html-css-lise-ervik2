@@ -383,7 +383,7 @@ h1 {
     margin-bottom: 10px;
 }
 .confirmation-page {
-    background-image: url(/images/8.1.jpg);
+    background-image: url(../images/8.1.jpg);
     background-position: right;
     background-repeat: no-repeat;
     min-block-size: 80vh;
