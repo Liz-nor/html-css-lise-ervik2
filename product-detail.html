@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="View your product in detail">
     <title>RainyDays Product Detail</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-io/favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="/Rainydays html assignement/css/imports/links.css">
     <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/imports/links.css">
-    <link rel="stylesheet" href="css/imports/variable.css">
+    <link rel="stylesheet" href="/Rainydays html assignement/css/imports/links.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Rainydays html assignement/favicon-io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Rainydays html assignement/favicon-io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <header>
+      <div class="header">
       <input type="checkbox" id="menu-checkbox"/>
       <label for="menu-checkbox" class="hamburger-icon"><i class="fa fa-bars"></i></label>
       <nav> 
@@ -29,75 +29,79 @@
         <a href="product.html">Woman</a>
         <a href="product.html">Season</a>
         <a href="product.html">Sale</a>
-        <a href="temporary.html">Find Store</a>
-        <a href="temporary.html">Search</a>
-        <a href="temporary.html">My profile</a>
+        <a href="find-store.html">Find Store</a>
+        <input type="text" id="search" placeholder="Search"><i class="fa-light fa-magnifying-glass"></i>
+        <a href="my-profile.html">My profile</a>
         <a href="cart.html">Cart</a>
     </nav>
+    </div>
   </header>
-  <a href="/RainyDays/Rainydays-html-assignement/index.html">
-  <img src="images/RainyDays_Logo.png" alt="RainyDays logo, a picture of a mountain with the text pushing the comfort zone underneath" class="logo"></a>
-  <a href="product.html">
-    <i class="fa-solid fa-circle-arrow-left">Back</i>
-  </a>
-  <div class="product-detail-container">
-    <div class="product-detail">
-      <div class="product-detail-product">
-        <div class="product-detail-photo-small">
-          <img src="images/fargeendring 2.jpg" alt="Light-weight runningjacket in a yellow color">
-          <img src="images/fargeendring 3.jpg" alt="Light-weight runningjacket in a green color">
-          <img src="images/fargeendring 4.jpg" alt="Light-weight runningjacket in a blue color">
+  <img src="images/RainyDays_Logo.png" alt="RainyDays logo" class="logo">
+  <div class="back-arrow">
+    <a href="product.html">
+      <label for="back-arrow" class="arrow"><i class="fa-solid fa-circle-arrow-left"></i>Back</a></label>
+  </div>
+  <div class="cart-container">
+    <h1>Your Product</h1>
+    <div class="cart">
+      <div class="cart-product">
+        <div class="cart-photo-small">
+          <img src="images/fargeendring 2.jpg" alt="">
+          <img src="images/fargeendring 3.jpg" alt="">
+          <img src="images/fargeendring 4.jpg" alt="">
         </div>
-        <img src="images/RainyDays_Jacket3.jpg" alt="Red light-weight runningjacket" class="product-detail-photo">
+        <img src="images/RainyDays_Jacket3.jpg" alt="Red light-weight runningjacket" class="cart-photo">
+        
         <div class="product-info">
-          <h1>Urban Stealth Jacket</h1>
-          <h2>$39.99</h2>
-          <p>This versatile jacket will be a great addition to your outdoor experience. The breathable material down each side will keep you from getting to warm even in high intensity workouts.</p>
+          <h2>Urban Stealth Jacket</h2>
           <p>Size: Large</p>
           <p>Color: Red/Black</p>
-        <div class="quantity">
-          <button class="quantity-btn">-</button>
-          <div>0</div>
-          <button class="quantity-btn">+</button>
-        </div>
+          <p>$39.99</p>
+          <div class="quantity">
+            <button class="quantity-btn">-</button>
+            <div>0</div>
+            <button class="quantity-btn">+</button>
+          </div>
         </div>
       </div>
       <div class="summary">
         <h3>Summary</h3>
-        <div class="summary-grid">
-          <div class="summary-text">
+        <div>
           <p>Total</p>
           <p>$0</p>
-          </div>
-          <div class="summary-actions">
-          <label for="discount-code"><input type="text" id="discount-code" placeholder="Enter discount code"></label>
+          <input type="text" id="discount-code" placeholder="Enter discount code">
           <button class="apply-btn">Apply</button>
           <a href="cart.html">
-          <button class="checkout-btn">Add To Cart</button></a>
-        </div>
+          <button class="checkout-btn">Proceed to checkout</button></a>
         </div>
         </div>
     </div>
   </div>
+
 <div class="do-not-miss-box">
-  <h3>Other people also purchased</h3>
+  <h3>Be sure not to miss out</h3>
   <div class="box-jackets">
+    <div class="box-jackets">
     <a href="product.html">
     <img src="images/RainyDays_Jacket5.jpg" alt="Grey waterproof jacket with orange details"></a>
-    <p>StormGuard Windbreaker $49.99</p>
+</div>
+  <div class="box-jackets">
     <a href="product.html">
     <img src="images/RainyDays_Jacket6.jpg" alt="Light-weight grey runners jacket"></a>
-    <p>StormShield Utility Jacket $49.99</p>
+  </div>
+  <div class="box-jackets">
     <a href="product.html">
     <img src="images/RainyDays_Jacket7.jpg" alt="Red windproof jacket with black details"></a>
-    <p>Olive Ridge Jacket $49.99</p>
+  </div>
+  <div class="box-jackets">
     <a href="product.html">
-    <img src="images/RainyDays_Jacket4.jpg" alt="Grey waterproof jacket with orange details"></a>
-    <p>IronGuard Jacket $49.99</p>
+    <img src="images/RainyDays_Jacket7.jpg" alt="Grey waterproof jacket with orange details"></a>
+  </div>
 </div>
 </div>
 </body>
-<footer class="footer">
+<footer>
+  <footer class="footer">
     <div class="footer-container">
         <div class="footer-links">
             <div class="footer-section">
@@ -123,11 +127,11 @@
     </div>
 
     <div class="footer-bottom">
-        <p>&#169;RainyDays 2025</p>
+        <p>© RainyDays 2025</p>
         <div class="social-icons">
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
-          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            <a href="temporary.html"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="temporary.html"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="temporary.html"><i class="fa-brands fa-youtube"></i>Youtube</a>
         </div>
     </div>
 </footer>
