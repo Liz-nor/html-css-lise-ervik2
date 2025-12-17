@@ -134,37 +134,6 @@ h1 {
   height: 0.7rem;
   border-radius: 50%;
 }
-
-/* footer {
-    background-color: var(--foundation-color);
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    max-width: fit-screen;
-    height: auto;
-    color: #ffffff;
-    font-size: small;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.left-side-footer {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    padding-left: .5rem;
-}
-
-.right-footer {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    padding-right: .5rem;
-} */
-
 .newsletter-container {
   display: flex;
   justify-content: center;
@@ -286,7 +255,9 @@ footer a {
   align-items: center;
   padding: 20px;
 }
-
+.cart-h1 {
+  margin: 50px auto;
+}
 .cart-product {
   display: flex;
   align-items: center;
