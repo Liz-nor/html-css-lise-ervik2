@@ -243,9 +243,10 @@ h1 {
 }
 
 .cart-container {
+  width: 600px;
   background: #d3d3d3;
   border-radius: 8px;
-  margin: 15px;
+  margin: auto;
   padding: 15px;
 }
 
@@ -363,7 +364,7 @@ h1 {
   text-align: center;
   border-radius: 8px;
   background: #d3d3d3;
-  margin: 15px;
+  margin: 15px auto;
   padding: 15px;
 }
 .do-not-miss-box h3 {
