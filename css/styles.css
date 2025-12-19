@@ -351,6 +351,20 @@ h1 {
   background-image: url(../images/pexels-rachel-claire-4993108-edited.jpg);
   opacity: 40%;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.confirmation-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .social-icons a {
